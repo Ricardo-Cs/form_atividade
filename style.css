@@ -1,10 +1,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to left ,rgb(140, 140, 177), rgb(196, 196, 176));
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 }
 
 div{
-    background-color: rgba(230, 117, 117, 0.384);
+    background-color: rgb(12, 12, 12, 0.384);
     position: absolute;
     top: 50%;
     left: 50%;
