@@ -42,3 +42,18 @@ legend{
     width: 100%;
     letter-spacing: 2px;
 }
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20%;
+    font-size: 12px;
+    color: dodgerblue;
+}
