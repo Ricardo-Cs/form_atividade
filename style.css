@@ -4,13 +4,14 @@ body{
 }
 
 div{
-    background-color: rgba(255, 255, 255, 0.637);
+    background-color: rgba(230, 117, 117, 0.384);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 80px;
     border-radius: 15px;
+    color: white;
 }
 
 input{
@@ -20,7 +21,7 @@ input{
     font-size: 15px;
 }
 
-button{
+#enviar{
     background-color: rgb(120, 122, 121);
     border: none;
     padding: 15px;
@@ -30,6 +31,10 @@ button{
     font-size: 15px;
 }
 
+#enviar:hover{
+    background-color: dodgerblue;
+    cursor: pointer;
+}
 
 
 

@@ -7,17 +7,25 @@
     <title>Formulário</title>
 </head>
 <body>
-    <div class="inputbox">
-        <form action="">
+    <div class="box">
+        <form action="post">
             <fieldset>
-            <strong><legend> Formulário de Cadastro</legend></strong>
-            <input type="text" name="nome" id="nome" class="inputuser" required>
-            <label for="nome" class="labelinput">Nome:</label>
-    </div>
-    <br><br>
-    <div class="inputbox">
-        <input type="email" name="email" id="email" class="inputuser" required>
-        <label for="email" class="labelinput">E-mail: </label> 
+                <legend><b>Formulário do Cliente</b></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">E-mail</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
             </fieldset>
         </form>
     </div>
