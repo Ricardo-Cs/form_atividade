@@ -1,10 +1,12 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    font-family: 'Nunito', sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+    
 }
 
 div{
-    background-color: rgb(12, 12, 12, 0.384);
+    background-color: rgb(0, 0, 0, 0.6);;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,7 +24,7 @@ input{
 }
 
 #enviar{
-    background-color: rgb(120, 122, 121);
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
     border: none;
     padding: 15px;
     width: 100%;
@@ -34,6 +36,10 @@ input{
 #enviar:hover{
     background-color: dodgerblue;
     cursor: pointer;
+}
+
+.titulo{
+    text-align: center;
 }
 
 
