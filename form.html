@@ -58,14 +58,16 @@
                 <br><br>
 
                 <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
+                    <select name="estado" id="estado" class="inputUser">
+                        <option selected>Selecione seu estado</option>
+                    </select>
                 </div>
                 <br><br>
 
                 <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" required>
-                    <label for="estado" class="labelInput">Estado</label>
+                    <select name="cidade" id="cidade" class="inputUser" disabled>
+                        <option selected>Selecione sua cidade</option>
+                    </select>
                 </div>
                 <br><br>
 
@@ -79,31 +81,7 @@
         </form>
     </div>
 
-    <script type="text/javascript">
-        /* Máscaras ER */
-        function mascara(o, f) {
-            v_obj = o
-            v_fun = f
-            setTimeout("execmascara()", 1)
-        }
-        function execmascara() {
-            v_obj.value = v_fun(v_obj.value)
-        }
-        function mtel(v) {
-            v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
-            v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
-            v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
-            return v;
-        }
-        function id(el) {
-            return document.getElementById(el);
-        }
-        window.onload = function () {
-            id('telefone').onkeyup = function () {
-                mascara(this, mtel);
-            }
-        }
-    </script>
+    <script type="text/javascript" src="JavaScript/functions.js"></script>
 </body>
 
 </html>
