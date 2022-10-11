@@ -18,8 +18,8 @@
     $telefone = $_POST['telefone'];
     $sexo = ['genero'];
     $data_nascimento = $_POST['data_nascimento'];
-    $cidade = ['cidade'];
     $estado = ['estado'];
+    $cidade = ['cidade'];
     $endereco = ['endereco'];
 
     
