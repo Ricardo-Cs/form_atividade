@@ -38,18 +38,18 @@
                 <br><br>
 
                 <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <input type="text" name="telefone" id="telefone" maxlength="15" class="inputUser" required>
                     <label for="telefone" class="labelInput">Telefone</label>
                 </div>
 
                 <p>Sexo</p>
-                <input type="radio" name="sexo" id="feminino" value="feminino">
+                <input type="radio" name="genero" id="feminino" value="feminino">
                 <label for="feminino">Feminino</label>
                 <br>
-                <input type="radio" name="sexo" id="masculino" value="masculino">
+                <input type="radio" name="genero" id="masculino" value="masculino">
                 <label for="masculino">Masculino</label>
                 <br>
-                <input type="radio" name="sexo" id="outro" value="outro">
+                <input type="radio" name="genero" id="outro" value="outro">
                 <label for="outro">Outro</label>
                 <br><br>
 
@@ -78,6 +78,32 @@
             </fieldset>
         </form>
     </div>
+
+    <script type="text/javascript">
+        /* Máscaras ER */
+        function mascara(o, f) {
+            v_obj = o
+            v_fun = f
+            setTimeout("execmascara()", 1)
+        }
+        function execmascara() {
+            v_obj.value = v_fun(v_obj.value)
+        }
+        function mtel(v) {
+            v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+            v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+            v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+            return v;
+        }
+        function id(el) {
+            return document.getElementById(el);
+        }
+        window.onload = function () {
+            id('telefone').onkeyup = function () {
+                mascara(this, mtel);
+            }
+        }
+    </script>
 </body>
 
 </html>
