@@ -16,13 +16,13 @@
     $senha = $_POST['senha'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
-    $sexo = ['genero'];
+    $sexo = $_POST['genero'];
     $data_nascimento = $_POST['data_nascimento'];
-    $estado = ['estado'];
-    $cidade = ['cidade'];
-    $endereco = ['endereco'];
+    $estado = $_POST['estado'];
+    $cidade = $_POST['cidade'];
+    $endereco = $_POST['endereco'];
 
-    
+
     $sql = "INSERT INTO usuarios(nome, senha, email, telefone, genero, data_nascimento, estado, cidade, endereco) VALUES ('$nome', '$senha', '$email', '$telefone', '$sexo', '$data_nascimento', '$estado', '$cidade', '$endereco')";
 
     if(mysqli_query($conexao, $sql))
