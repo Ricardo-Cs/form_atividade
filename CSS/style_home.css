@@ -1,0 +1,52 @@
+body {
+    font-family: 'Nunito', 'sans-serif';
+    background-color:#34C76F;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: white;
+}
+
+#menu-h{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+
+}
+
+#menu-h ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: black;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#menu-h ul li a:hover {
+    background-color: #34C76F;
+}
+
+
+
+#logo{
+    display: inline-block;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
