@@ -36,11 +36,11 @@ body {
     text-decoration: none;
 }
 
+/*
 #menu-h ul li a:hover {
     background-color: #34C76F;
 }
-
-
+*/
 
 #logo{
     display: inline-block;
@@ -49,4 +49,13 @@ body {
 .container{
     max-width: 1400px;
     margin: 0 auto;
+}
+
+#botao-entrar{
+
+}
+
+#botao-cadastrar{
+    background-color: #34C76F;
+    color: white;
 }
