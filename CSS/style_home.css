@@ -36,26 +36,29 @@ body {
     text-decoration: none;
 }
 
-/*
+
 #menu-h ul li a:hover {
     background-color: #34C76F;
 }
-*/
 
 #logo{
     display: inline-block;
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
 #botao-entrar{
+    background-color: none;
+    border: solid;
+    
 
 }
 
 #botao-cadastrar{
     background-color: #34C76F;
-    color: white;
+    color: none;
+    border: solid;
 }
